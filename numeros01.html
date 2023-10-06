@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<title>Suscripción boletín</title> 
+	<meta charset="utf-8">
+	<style type="text/css">
+		h1 { text-align: center; }
+		td { padding: 0.2em 2em ; }
+	</style>
+</head>
+
+<body>
+	<h1>Números.</h1>
+	<p>Nota: Este es un formulario de ejemplo en el que los datos aquí escritos se 
+		trasladan a otra página.</p>
+
+	<form action="numeros01.php" method="post"/>
+
+		<p> Numero1: <input type="number" name="num_inicio" size="10" autofocus required />
+    		Numero2: <input type="number" name="num_final"  size="10" required/>   
+    		Numero3: <input type="number" name="salto"      size="10" required />
+		</p>
+
+		<p> Nombre:  <input type="text"   name="nombre"     size="30" required />
+		    Apellido:<input type="text"	  name="apellido"   size="30" required />
+		    Email:   <input type="email"  name="correo"     size="45" />
+		    Telefono:<input type="number" name="telefono"   size="12" />
+		    Edad :   <input type="number" name="edad"       size="3" min="15" max="30" required />
+		    Fecha Nac:<input type="date"  name="fecha_nac" />
+		    Time :   <input type="datatime" name="tiempo_control" />
+		    Semana : <input type="week"   name="semana_control" />
+		    Mes :    <input type="month"  name="mes_control" />
+		    Color :  <input type="color"  name="color_control" />
+		    Nacionalidad:
+    			<input type="radio" name="nacionalidad" value="hispana">Hispana</input>
+    			<input type="radio" name="nacionalidad" value="otra">Otra</input><br>
+    		Sexo :   
+    			<input type="radio" name="sexo" value = "Femenino"> Femenino</imput>
+    			<input type="radio" name="sexo" value = "Masculino">Masculino</input>
+                <input type="radio" name="sexo" value = "Otro">Otro</input><br>
+				<input type="radio" name="sexo" value = "Prefiero">Genero Biologico</input><br>
+    			<br>	
+			Contraseña: <input type="password" name="password"><br>
+        </p>
+
+		<p>
+       		<input type="submit" value="Comprobar el formulario"> 
+       		<input type="reset"  value="borrar todo">
+		</p>
+
+	</form>
+</body>
+</html>
