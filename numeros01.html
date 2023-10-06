@@ -1,54 +1,90 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Suscripción boletín</title> 
-	<meta charset="utf-8">
-	<style type="text/css">
-		h1 { text-align: center; }
-		td { padding: 0.2em 2em ; }
-	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Suscripción boletín</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<h1>Números.</h1>
-	<p>Nota: Este es un formulario de ejemplo en el que los datos aquí escritos se 
-		trasladan a otra página.</p>
+	<div class="container">
+		<div class="card">
+			<h1>Números.</h1>
+			<p>Nota: Este es un formulario de ejemplo en el que los datos aquí escritos se
+				trasladan a otra página.</p>
+			<hr />
 
-	<form action="numeros01.php" method="post"/>
+			<form action="numeros01.php" method="post">
+				<div class="grid-form">
+					<div>
+						<div>
+							Numero1: <input type="number" name="num_inicio" autofocus required />
+							<div class="separator"></div>
+							Numero2: <input type="number" name="num_final" required />
+							<div class="separator"></div>
+							Numero3: <input type="number" name="salto" required />
+							<div class="separator"></div>
+						</div>
+						<div>
+							Time : <input type="datatime" name="tiempo_control" />
+							<div class="separator"></div>
+							Semana : <input type="week" name="semana_control" />
+							<div class="separator"></div>
+							Mes : <input type="month" name="mes_control" />
+							<div class="separator"></div>
+						</div>
+						<div>
+							Color : <input type="color" name="color_control" />
+							<div class="separator"></div>
 
-		<p> Numero1: <input type="number" name="num_inicio" size="10" autofocus required />
-    		Numero2: <input type="number" name="num_final"  size="10" required/>   
-    		Numero3: <input type="number" name="salto"      size="10" required />
-		</p>
+							Nacionalidad:
+							<input type="radio" name="nacionalidad" value="hispana">Hispana</input>
+							<input type="radio" name="nacionalidad" value="otra">Otra</input>
+							<div class="separator"></div>
+						</div>
+					</div>
 
-		<p> Nombre:  <input type="text"   name="nombre"     size="30" required />
-		    Apellido:<input type="text"	  name="apellido"   size="30" required />
-		    Email:   <input type="email"  name="correo"     size="45" />
-		    Telefono:<input type="number" name="telefono"   size="12" />
-		    Edad :   <input type="number" name="edad"       size="3" min="15" max="30" required />
-		    Fecha Nac:<input type="date"  name="fecha_nac" />
-		    Time :   <input type="datatime" name="tiempo_control" />
-		    Semana : <input type="week"   name="semana_control" />
-		    Mes :    <input type="month"  name="mes_control" />
-		    Color :  <input type="color"  name="color_control" />
-		    Nacionalidad:
-    			<input type="radio" name="nacionalidad" value="hispana">Hispana</input>
-    			<input type="radio" name="nacionalidad" value="otra">Otra</input><br>
-    		Sexo :   
-    			<input type="radio" name="sexo" value = "Femenino"> Femenino</imput>
-    			<input type="radio" name="sexo" value = "Masculino">Masculino</input>
-                <input type="radio" name="sexo" value = "Otro">Otro</input><br>
-				<input type="radio" name="sexo" value = "Prefiero">Genero Biologico</input><br>
-    			<br>	
-			Contraseña: <input type="password" name="password"><br>
-        </p>
+					<div>
+						<div>
+							Nombre: <input type="text" name="nombre" size="30" required />
+							<div class="separator"></div>
+							Apellido:<input type="text" name="apellido" size="30" required />
+							<div class="separator"></div>
+							Email: <input type="email" name="correo" />
+							<div class="separator"></div>
+						</div>
+						<div>
+							Telefono:<input type="number" name="telefono" />
+							<div class="separator"></div>
+							Edad : <input type="number" name="edad" size="3" min="15" max="30" required />
+							<div class="separator"></div>
+							Fecha Nacimiento:<input type="date" name="fecha_nac" />
+							<div class="separator"></div>
+						</div>
+						<div>
+							Sexo :
+							<input type="radio" name="sexo" value="Femenino"> Femenino</imput>
+							<input type="radio" name="sexo" value="Masculino">Masculino</input>
+							<input type="radio" name="sexo" value="Otro">Otro</input><br>
+							<input type="radio" name="sexo" value="Prefiero">Genero Biologico</input><br>
+							<div class="separator"></div>
+						</div>
+					</div>
+				</div>
 
-		<p>
-       		<input type="submit" value="Comprobar el formulario"> 
-       		<input type="reset"  value="borrar todo">
-		</p>
+				<hr>
+				Contraseña: <input type="password" name="password">
+				<div class="separator"></div>
 
-	</form>
+				<button type="submit">Comprobar el formulario</button>
+				<button type="reset">borrar todo</button>
+				<div class="separator"></div>
+
+			</form>
+		</div>
+	</div>
 </body>
+
 </html>

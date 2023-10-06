@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: #e2e2e2;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 15px 15px;
+  background-color: #f1f1f1;
+  margin-top: 5%;
+  max-width: 800px;
+  text-align: center;
+}
+
+input {
+  border-radius: 5px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  background-color: white;
+}
+
+button {
+  border-radius: 5px;
+  padding: 1%;
+  background-color: white;
+  cursor: pointer;
+}
+
+hr {
+  width: 80%;
+}
+
+.separator {
+  margin-bottom: 3%;
+}
+
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
+    padding: 20px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
